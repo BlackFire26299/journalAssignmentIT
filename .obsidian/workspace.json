@@ -11,10 +11,14 @@
             "id": "5cced3755df9d35c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "PrePlanning/Pre-Planning Contents.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Pre-Planning Contents"
             }
           }
         ]
@@ -163,11 +167,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "a35ab4614b750429",
+  "active": "5cced3755df9d35c",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "README.md",
     "PrePlanning/Pre-Planning Contents.md",
+    "README.md",
+    "Untitled.canvas",
     "Untitled.md",
     "Documentation/Documentation Contents.md",
     "Untitled",
