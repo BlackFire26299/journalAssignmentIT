@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PrePlanning/Pre-Planning Contents.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pre-Planning Contents"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PrePlanning/Pre-Planning Contents.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pre-Planning Contents"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PrePlanning/Pre-Planning Contents.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Pre-Planning Contents"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PrePlanning/Pre-Planning Contents.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pre-Planning Contents"
+              "title": "Outline of README"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "4e0b3e1c864f5b3d",
   "lastOpenFiles": [
-    "Untitled.md",
     "PrePlanning/Pre-Planning Contents.md",
+    "Untitled.md",
     "Documentation/Documentation Contents.md",
     "README.md",
     "Untitled",
