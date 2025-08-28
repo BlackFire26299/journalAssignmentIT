@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d93ce10036719cd2",
+        "id": "e144c1e9ffffd0ee",
         "type": "tabs",
         "children": [
           {
-            "id": "4e0b3e1c864f5b3d",
+            "id": "5cced3755df9d35c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links"
             }
           },
           {
@@ -142,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Untitled.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Untitled"
             }
           }
         ]
@@ -169,12 +163,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "4e0b3e1c864f5b3d",
+  "active": "a35ab4614b750429",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "README.md",
     "PrePlanning/Pre-Planning Contents.md",
     "Untitled.md",
     "Documentation/Documentation Contents.md",
-    "README.md",
     "Untitled",
     "PrePlanning",
     "Documentation"
