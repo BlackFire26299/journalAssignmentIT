@@ -8,10 +8,15 @@ The portfolio part 1 task for IT. The app will be named Amethyst
 
 ## Pre-Planning and Prototyping
 
-Refer to the PrePlanning directory.
+Refer to the [[Pre-Planning Contents|Pre-Planning]]
+
 
 ## Documentation
 
-Refer to the Documentation directory.
+Refer to the [[Documentation Contents|Documentation]]
+
+## Qbism
+
+Incase you wanted to read: [[Qbism]]
 
 ## Reflection
