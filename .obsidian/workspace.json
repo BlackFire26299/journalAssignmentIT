@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PrePlanning/Visual Design/Visual Design.md",
-                "mode": "preview",
+                "file": "Documentation/Develpmentprocess/Development Process.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visual Design"
+              "title": "Development Process"
             }
           }
         ]
@@ -169,23 +169,26 @@
   },
   "active": "5cced3755df9d35c",
   "lastOpenFiles": [
+    "PrePlanning/Features/Features.md",
+    "PrePlanning/Ideas/Ideas.md",
+    "Documentation/Develpmentprocess/Development Process.md",
+    "PrePlanning/Visual Design/Visual Design.md",
+    "Documentation/Documentation Contents.md",
+    "Code/UIs/Mainapp.ui",
+    "Code/UIs",
+    "Code/New folder",
+    "Documentation/Develpmentprocess",
+    "Code/main.py",
+    "Code/]",
+    "Code",
     "PrePlanning/Pre-Planning Contents.md",
     "README.md",
     "Qbism/Qbism.md",
-    "Documentation/Documentation Contents.md",
-    "PrePlanning/Visual Design/Visual Design.md",
-    "PrePlanning/Ideas/Ideas.md",
-    "PrePlanning/Features/Features.md",
     "Qbism/Quantum probabilities as bayesian probabilities.pdf",
     "Qbism",
     "PrePlanning/Visual Design/App background.png",
     "PrePlanning/Visual Design",
-    "PrePlanning/Ideas",
-    "PrePlanning/Features",
     "Untitled.canvas",
-    "Untitled.md",
-    "Untitled",
-    "PrePlanning",
-    "Documentation"
+    "Untitled.md"
   ]
 }

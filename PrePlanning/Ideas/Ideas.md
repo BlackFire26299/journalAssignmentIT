@@ -1,7 +1,7 @@
 
 Contents:
 [[Pre-Planning Contents]]
-## Ideas 28/08/25
+
 
 - Use markdown as the storage and make it so it can be previewed. Markdown allows for both just normal text editing and also stylized editing
 - maybe have the option to change between markdown and normal text files to accommodate for normal users
