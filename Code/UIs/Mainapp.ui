@@ -263,6 +263,19 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
+           <widget class="QTextEdit" name="textEdit">
+            <property name="geometry">
+             <rect>
+              <x>13</x>
+              <y>13</y>
+              <width>721</width>
+              <height>621</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(90, 73, 95);</string>
+            </property>
+           </widget>
           </widget>
          </item>
          <item row="1" column="1">
