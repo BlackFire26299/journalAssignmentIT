@@ -13,7 +13,7 @@ Refer to the [Pre-Planning](PrePlanning/Pre-Planning.md)
 
 ## Documentation
 
-Refer to the [Documentation](Documentation/Documentation)
+Refer to the [Documentation](Documentation/Documentation.md)
 
 ## Qbism
 
