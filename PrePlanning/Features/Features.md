@@ -1,7 +1,6 @@
 
 Contents
-[[Pre-Planning Contents]]
-
+[Pre-Planning](PrePlanning/Pre-Planning)
 ## Main Features
 
 * Able to interact with the date

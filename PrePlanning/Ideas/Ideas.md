@@ -1,6 +1,6 @@
 
 Contents:
-[[Pre-Planning Contents]]
+[Pre-Planning](PrePlanning/Pre-Planning)
 
 
 - Use markdown as the storage and make it so it can be previewed. Markdown allows for both just normal text editing and also stylized editing

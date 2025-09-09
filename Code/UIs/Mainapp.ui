@@ -96,6 +96,9 @@ background-color: rgb(81, 34, 80);</string>
              <property name="leftMargin">
               <number>3</number>
              </property>
+             <property name="topMargin">
+              <number>3</number>
+             </property>
              <item>
               <widget class="Line" name="line_3">
                <property name="minimumSize">
