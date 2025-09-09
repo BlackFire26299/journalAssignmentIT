@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1039</width>
+    <width>1040</width>
     <height>740</height>
    </rect>
   </property>
@@ -292,64 +292,22 @@ background-color: rgb(81, 34, 80);</string>
              </size>
             </property>
            </widget>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QFrame" name="MainView">
-           <property name="styleSheet">
-            <string notr="true">border: 2px rgb(61, 26, 60);
-border-radius: 4px;
-padding: 2px;
-background-color: rgb(81, 34, 80);</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Shape::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Shadow::Raised</enum>
-           </property>
-           <widget class="QTextEdit" name="mdEditor">
-            <property name="geometry">
-             <rect>
-              <x>13</x>
-              <y>13</y>
-              <width>721</width>
-              <height>621</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(90, 73, 95);
-color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="placeholderText">
-             <string>Start Journaling...</string>
-            </property>
-           </widget>
-           <widget class="QTextEdit" name="mdViewer">
-            <property name="geometry">
-             <rect>
-              <x>13</x>
-              <y>13</y>
-              <width>721</width>
-              <height>621</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(90, 73, 95);
-color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="readOnly">
+           <widget class="QWidget" name="texteditors" native="true">
+            <property name="enabled">
              <bool>true</bool>
             </property>
-            <property name="markdown">
-             <string/>
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>100</y>
+              <width>726</width>
+              <height>622</height>
+             </rect>
             </property>
-            <property name="placeholderText">
-             <string/>
+            <property name="autoFillBackground">
+             <bool>false</bool>
             </property>
            </widget>
-           <zorder>mdViewer</zorder>
-           <zorder>mdEditor</zorder>
           </widget>
          </item>
          <item row="1" column="1">
@@ -394,6 +352,79 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QFrame" name="MainView">
+           <property name="styleSheet">
+            <string notr="true">border: 2px rgb(61, 26, 60);
+border-radius: 4px;
+padding: 2px;
+background-color: rgb(81, 34, 80);</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QStackedWidget" name="stackedWidget">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="celendarPage">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <widget class="QCalendarWidget" name="calendar">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(24, 24, 24);</string>
+                  </property>
+                  <property name="gridVisible">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="mdviewerPage">
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0">
+                 <widget class="QTextEdit" name="mdView">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(90, 73, 95);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                  <property name="markdown">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="EditorPage">
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QTextEdit" name="mdeditor">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(90, 73, 95);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Start Journaling...</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
         </layout>
