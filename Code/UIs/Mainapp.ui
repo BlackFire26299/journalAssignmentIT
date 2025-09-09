@@ -80,7 +80,7 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QWidget" name="verticalLayoutWidget">
             <property name="geometry">
              <rect>
               <x>0</x>
@@ -89,18 +89,104 @@ background-color: rgb(81, 34, 80);</string>
               <height>31</height>
              </rect>
             </property>
-            <property name="font">
-             <font>
-              <pointsize>15</pointsize>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(106, 0, 255);</string>
-            </property>
-            <property name="text">
-             <string>M</string>
-            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>3</number>
+             </property>
+             <item>
+              <widget class="Line" name="line_3">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>3</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>26</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 231, 253);
+background-color: rgb(255, 231, 253);</string>
+               </property>
+               <property name="lineWidth">
+                <number>18</number>
+               </property>
+               <property name="midLineWidth">
+                <number>3</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>3</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>26</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 231, 253);
+background-color: rgb(255, 231, 253);</string>
+               </property>
+               <property name="lineWidth">
+                <number>18</number>
+               </property>
+               <property name="midLineWidth">
+                <number>3</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>3</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>26</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 231, 253);
+background-color: rgb(255, 231, 253);</string>
+               </property>
+               <property name="lineWidth">
+                <number>18</number>
+               </property>
+               <property name="midLineWidth">
+                <number>3</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+            <zorder>line_2</zorder>
+            <zorder>line_3</zorder>
+            <zorder>line</zorder>
            </widget>
           </widget>
          </item>
