@@ -1,2 +1,2 @@
 
-[[README|To the Readme]]
+[To the readme](../README.md)
