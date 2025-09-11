@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documentation/Develpmentprocess/Development Process.md",
+                "file": "PrePlanning/Features/Features.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Development Process"
+              "title": "Features"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "5cced3755df9d35c",
   "lastOpenFiles": [
+    "Documentation/Develpmentprocess/Development Process.md",
     "Documentation/Documentation.md",
     "PrePlanning/Pre-Planning.md",
     "PrePlanning/Features/Features.md",
@@ -176,7 +177,6 @@
     "PrePlanning/VisualDesign/VisualDesign.md",
     "Visual.md",
     "README.md",
-    "Documentation/Develpmentprocess/Development Process.md",
     "PrePlanning/VisualDesign/App background.png",
     "Code/UIs/Mainapp.ui.ndAruV",
     "Code/UIs/Mainapp.ui",

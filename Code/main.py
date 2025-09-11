@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
 
     def keyPressEvent(self, event: QKeyEvent):
         key = event.key()
-        if key == Qt.Key.Key_Control:
+        if key == Qt.Key.Key_Escape:
             self.changeJournalPage()
 
     
