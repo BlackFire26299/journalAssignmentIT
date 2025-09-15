@@ -326,6 +326,20 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <property name="leftMargin">
+             <number>3</number>
+            </property>
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="rightMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+           </layout>
           </widget>
          </item>
          <item row="0" column="1">
@@ -356,7 +370,7 @@ background-color: rgb(81, 34, 80);</string>
             <item row="0" column="0">
              <widget class="QStackedWidget" name="mainViewWidgets">
               <property name="currentIndex">
-               <number>2</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="celendarPage">
                <layout class="QGridLayout" name="gridLayout_5">

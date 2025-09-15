@@ -3,6 +3,7 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtCore import Qt
 from PyQt6 import uic
 from PyQt6.QtGui import QKeyEvent
+
 import time
 import sys
 from math import pi, sqrt
@@ -35,6 +36,9 @@ class MainWindow(QMainWindow):
         if key == Qt.Key.Key_Escape:
             self.changeJournalPage()
 
+    def populateFileBrowser(self, path):
+        fbPath = path
+        
     
     def changeJournalPage(self):
         if self.mainViewWidgets.currentIndex() !=2:
