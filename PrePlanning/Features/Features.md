@@ -17,5 +17,6 @@ Contents
  - [ ] Users can manually add new files that have been created in a different software
  - [x] Have the user be able to switch from markdown editing (markdown without the styling) to markdown viewing (markdown with the styling) with a hotkey
  - [ ] Have there be a kind of workspace system where the user can separate their notes in different directories. The app will then globally remember the workspaces the user can open.
+ - [ ] Themes
 ## Extra Features I would like to include if I have time
 - [ ] live markdown processing so that you wouldn't have to switch in-between viewing and editing
