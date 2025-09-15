@@ -6,7 +6,6 @@ from PyQt6.QtGui import QKeyEvent
 import time
 import sys
 from math import pi, sqrt
-import keyboard
 
 
 app = QApplication(sys.argv)
