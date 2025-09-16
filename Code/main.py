@@ -20,10 +20,14 @@ class MainWindow(QMainWindow):
         if type(name) == type(string):
             self.setWindowTitle(name)
 
+        self.openFile = ""
         self.files = []
-        self.wsPath = "PrePlanning"
+        self.filecontents = {}
+        self.wsPath = "TestWorkSpace"
+        self.FileList.itemClicked.connect(self.clickedFileItem)
+        self.Save.clicked.connect(self.save)
+        self.SaveButton1.clicked.connect(self.save)
         
-
         
         self.populateFileBrowser()
         self.CalendarButton.clicked.connect(self.openCalendarPage)
@@ -32,9 +36,22 @@ class MainWindow(QMainWindow):
         self.currentJournalPage = 2 # 2 is the journal edit and 1 is the md view
         self.mainViewWidgets.setCurrentIndex(self.currentJournalPage)
         self.mdeditor.textChanged.connect(self.markdownUpdate)
+        self.mdeditor.textChanged.connect(self.tempsave)
+
 
         
         self.show()
+
+
+    def clickedFileItem(self, clickedItem):
+        self.openFile = clickedItem.text()+".md"
+        self.mdeditor.setText(self.filecontents[self.openFile])
+        
+    def save(self):
+         with open(self.wsPath+"/"+self.openFile, "w") as openFile:
+             openFile.write(self.filecontents[self.openFile])
+    def tempsave(self):
+        self.filecontents[self.openFile] = self.mdeditor.toPlainText()
 
 
     def keyPressEvent(self, event: QKeyEvent):
@@ -63,11 +80,14 @@ class MainWindow(QMainWindow):
         for item in filesAndFolders:
             if item[-3:] == ".md":
                 self.files.append(item)
-        self.fileviewModel.clear()
+        self.FileList.clear()
         for file in self.files:
-            
-            item = QListWidgetItem()
-
+            item = QListWidgetItem(file[:-3])
+            self.FileList.addItem(item)
+            with open(self.wsPath+"/"+file, "r") as openFile:
+                self.filecontents[file] = openFile.read()
+                
+        print(self.filecontents)
     def markdownUpdate(self):
         self.mdView.setMarkdown(self.mdeditor.toPlainText())
 

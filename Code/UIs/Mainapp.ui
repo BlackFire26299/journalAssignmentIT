@@ -568,7 +568,7 @@ background-color: rgb(24, 24, 24);</string>
                 <property name="bottomMargin">
                  <number>3</number>
                 </property>
-                <item row="1" column="0">
+                <item row="0" column="0">
                  <widget class="QTextEdit" name="mdView">
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(90, 73, 95);
@@ -582,17 +582,6 @@ color: rgb(255, 255, 255);</string>
                   </property>
                   <property name="placeholderText">
                    <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QPushButton" name="SaveButton2">
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(90, 73, 95);
-color: rgb(255, 255, 255);</string>
-                  </property>
-                  <property name="text">
-                   <string>Save</string>
                   </property>
                  </widget>
                 </item>

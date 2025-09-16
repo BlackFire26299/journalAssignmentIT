@@ -5,13 +5,13 @@ Contents
 
 * [ ] Able to interact with the date (chose the date in the notes to create. And then place and order them on the calendar)
 * [x] Can allow free text inputs
-* [ ] Enable saving and viewing of old entries
-* [ ] Save entries and allow them to be accessed later
+* [x] Enable saving and viewing of old entries
+* [x] Save entries and allow them to be accessed later
 
 ## Extra Features I would like to include
 
  - [ ] A command line interface for easy git access
- - [ ] chose to open any folder and automatically read any markdown files. 
+ - [x] chose to open any folder and automatically read any markdown files. 
  - [ ] settings page to specify different things
  - [ ] Users can specify if they want to search for markdown or text documents or both
  - [ ] Users can manually add new files that have been created in a different software
