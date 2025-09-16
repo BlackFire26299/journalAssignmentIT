@@ -22,7 +22,8 @@ class MainWindow(QMainWindow):
         if type(name) == type(string):
             self.setWindowTitle(name)
 
-        self.openFile = ""
+        self.openFile = "Not Yet Saved"
+        self.FileNameLabel.setText(self.openFile)
         self.files = []
         self.filecontents = {}
         self.wsPath = "TestWorkSpace"
@@ -55,6 +56,7 @@ class MainWindow(QMainWindow):
     def clickedFileItem(self, clickedItem):
         self.openFile = clickedItem.text()+".md"
         self.mdeditor.setText(self.filecontents[self.openFile])
+        self.FileNameLabel.setText(self.openFile)
     
     def openWorkspace(self):
         directory_path = QFileDialog.getExistingDirectory(parent=self, caption="Select Directory", directory="")
@@ -65,7 +67,8 @@ class MainWindow(QMainWindow):
 
     def newFile(self):
         self.clearEdit()
-        self.openFile = ""
+        self.openFile = "Not Yet Saved"
+        self.FileNameLabel.setText(self.openFile)
 
 
     def Delete(self):
@@ -76,7 +79,8 @@ class MainWindow(QMainWindow):
                     os.remove(self.wsPath+"/"+self.openFile)
                     self.populateFileBrowser()
                     self.clearEdit()
-                    self.openFile = ""
+                    self.openFile = "Not Yet Saved"
+                    self.FileNameLabel.setText(self.openFile)
 
 
             elif ok and not text:
@@ -85,7 +89,7 @@ class MainWindow(QMainWindow):
                 print("User cancelled the input.")
 
     def save(self):
-        if self.openFile != "":
+        if self.openFile != "Not Yet Saved":
             with open(self.wsPath+"/"+self.openFile, "w") as openFile:
                 openFile.write(self.filecontents[self.openFile])
         else:
@@ -96,6 +100,7 @@ class MainWindow(QMainWindow):
                 
                 self.save()
                 self.populateFileBrowser()
+                self.FileNameLabel.setText(self.openFile)
 
             elif ok and not text:
                 print("User entered nothing.")

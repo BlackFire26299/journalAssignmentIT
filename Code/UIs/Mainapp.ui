@@ -381,7 +381,7 @@ background-color: rgb(81, 34, 80);</string>
             <enum>QFrame::Shadow::Raised</enum>
            </property>
            <layout class="QGridLayout" name="gridLayout_9">
-            <item row="0" column="0">
+            <item row="0" column="1">
              <widget class="QListWidget" name="FileList">
               <property name="styleSheet">
                <string notr="true">background-color: rgb(90, 73, 95);
@@ -641,6 +641,49 @@ color: rgb(255, 255, 255);</string>
                 <property name="bottomMargin">
                  <number>3</number>
                 </property>
+                <item row="0" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QPushButton" name="SaveButton1">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(90, 73, 95);
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Save</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="FileNameLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>150000</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>FileName</string>
+                    </property>
+                    <property name="margin">
+                     <number>0</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
                 <item row="1" column="0">
                  <widget class="QTextEdit" name="mdeditor">
                   <property name="enabled">
@@ -652,17 +695,6 @@ color: rgb(255, 255, 255);</string>
                   </property>
                   <property name="placeholderText">
                    <string>Start Journaling...</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QPushButton" name="SaveButton1">
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(90, 73, 95);
-color: rgb(255, 255, 255);</string>
-                  </property>
-                  <property name="text">
-                   <string>Save</string>
                   </property>
                  </widget>
                 </item>
