@@ -30,7 +30,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(129, 54, 128);
+       <string notr="true">
 background-color: rgb(129, 54, 128);</string>
       </property>
       <property name="frameShape">
@@ -286,57 +286,72 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
-           <widget class="QPushButton" name="JournalButton">
-            <property name="geometry">
-             <rect>
-              <x>4</x>
-              <y>6</y>
-              <width>24</width>
-              <height>24</height>
-             </rect>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="leftMargin">
+             <number>2</number>
             </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(134, 24, 138);</string>
+            <property name="topMargin">
+             <number>2</number>
             </property>
-            <property name="text">
-             <string/>
+            <property name="rightMargin">
+             <number>2</number>
             </property>
-            <property name="icon">
-             <iconset theme="accessories-dictionary"/>
+            <property name="bottomMargin">
+             <number>2</number>
             </property>
-            <property name="iconSize">
-             <size>
-              <width>24</width>
-              <height>21</height>
-             </size>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="CalendarButton">
-            <property name="geometry">
-             <rect>
-              <x>4</x>
-              <y>43</y>
-              <width>24</width>
-              <height>24</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(134, 24, 138);</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../../art/icons/Calendar.png</normaloff>../../art/icons/Calendar.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>18</width>
-              <height>24</height>
-             </size>
-            </property>
-           </widget>
+            <item>
+             <widget class="QPushButton" name="JournalButton">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(134, 24, 138);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="accessories-dictionary"/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>24</width>
+                <height>21</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="CalendarButton">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(134, 24, 138);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../art/icons/Calendar.png</normaloff>../../art/icons/Calendar.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>18</width>
+                <height>24</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Orientation::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
           </widget>
          </item>
          <item row="1" column="1">
@@ -397,7 +412,7 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
-           <layout class="QGridLayout" name="gridLayout_8">
+           <layout class="QHBoxLayout" name="horizontalLayout">
             <property name="leftMargin">
              <number>3</number>
             </property>
@@ -410,57 +425,7 @@ background-color: rgb(81, 34, 80);</string>
             <property name="bottomMargin">
              <number>3</number>
             </property>
-            <item row="0" column="1">
-             <widget class="QPushButton" name="NewWorkspace">
-              <property name="maximumSize">
-               <size>
-                <width>24</width>
-                <height>24</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(134, 24, 138);</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="icon">
-               <iconset theme="folder"/>
-              </property>
-              <property name="iconSize">
-               <size>
-                <width>24</width>
-                <height>21</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="3">
-             <widget class="QPushButton" name="Save">
-              <property name="maximumSize">
-               <size>
-                <width>24</width>
-                <height>24</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(134, 24, 138);</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="icon">
-               <iconset theme="document-save"/>
-              </property>
-              <property name="iconSize">
-               <size>
-                <width>24</width>
-                <height>21</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
+            <item>
              <widget class="QPushButton" name="NewFile">
               <property name="maximumSize">
                <size>
@@ -485,8 +450,8 @@ background-color: rgb(81, 34, 80);</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="2">
-             <widget class="QPushButton" name="OpenWorkspace">
+            <item>
+             <widget class="QPushButton" name="OpenWorkspaceButton">
               <property name="maximumSize">
                <size>
                 <width>24</width>
@@ -501,6 +466,81 @@ background-color: rgb(81, 34, 80);</string>
               </property>
               <property name="icon">
                <iconset theme="folder-open"/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>24</width>
+                <height>21</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Save">
+              <property name="maximumSize">
+               <size>
+                <width>24</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(134, 24, 138);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="document-save"/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>24</width>
+                <height>21</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="DeleteButton">
+              <property name="maximumSize">
+               <size>
+                <width>24</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(134, 24, 138);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="edit-delete"/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>24</width>
+                <height>21</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="RefreshButton">
+              <property name="maximumSize">
+               <size>
+                <width>24</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(134, 24, 138);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="emblem-synchronized"/>
               </property>
               <property name="iconSize">
                <size>
@@ -525,7 +565,7 @@ background-color: rgb(81, 34, 80);</string>
             <item row="0" column="0">
              <widget class="QStackedWidget" name="mainViewWidgets">
               <property name="currentIndex">
-               <number>1</number>
+               <number>2</number>
               </property>
               <widget class="QWidget" name="celendarPage">
                <layout class="QGridLayout" name="gridLayout_5">
