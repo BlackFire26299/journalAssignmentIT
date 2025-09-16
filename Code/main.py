@@ -2,7 +2,8 @@ from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import Qt
 from PyQt6 import uic
-from PyQt6.QtGui import QKeyEvent
+from PyQt6.QtGui import QKeyEvent, QStandardItemModel, QStandardItem
+import os
 
 import time
 import sys
@@ -19,15 +20,20 @@ class MainWindow(QMainWindow):
         if type(name) == type(string):
             self.setWindowTitle(name)
 
+        self.files = []
+        self.wsPath = "PrePlanning"
+        
+
+        
+        self.populateFileBrowser()
         self.CalendarButton.clicked.connect(self.openCalendarPage)
         self.JournalButton.clicked.connect(self.openJournalPage)
         self.iscalendaropen = False
         self.currentJournalPage = 2 # 2 is the journal edit and 1 is the md view
         self.mainViewWidgets.setCurrentIndex(self.currentJournalPage)
-        
         self.mdeditor.textChanged.connect(self.markdownUpdate)
 
-
+        
         self.show()
 
 
@@ -36,10 +42,6 @@ class MainWindow(QMainWindow):
         if key == Qt.Key.Key_Escape:
             self.changeJournalPage()
 
-    def populateFileBrowser(self, path):
-        fbPath = path
-        
-    
     def changeJournalPage(self):
         if self.mainViewWidgets.currentIndex() !=2:
             self.mainViewWidgets.setCurrentIndex(2)
@@ -54,6 +56,17 @@ class MainWindow(QMainWindow):
     def openCalendarPage(self):
         self.iscalendaropen = True
         self.mainViewWidgets.setCurrentIndex(0)
+
+
+    def populateFileBrowser(self, path= "PrePlanning"):
+        filesAndFolders = os.listdir(self.wsPath)
+        for item in filesAndFolders:
+            if item[-3:] == ".md":
+                self.files.append(item)
+        self.fileviewModel.clear()
+        for file in self.files:
+            
+            item = QListWidgetItem()
 
     def markdownUpdate(self):
         self.mdView.setMarkdown(self.mdeditor.toPlainText())

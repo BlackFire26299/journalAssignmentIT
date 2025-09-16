@@ -221,13 +221,13 @@ background-color: rgb(81, 34, 80);</string>
            </property>
            <layout class="QGridLayout" name="gridLayout_7">
             <property name="leftMargin">
-             <number>3</number>
+             <number>5</number>
             </property>
             <property name="topMargin">
              <number>3</number>
             </property>
             <property name="rightMargin">
-             <number>2</number>
+             <number>5</number>
             </property>
             <property name="bottomMargin">
              <number>3</number>
@@ -367,7 +367,12 @@ background-color: rgb(81, 34, 80);</string>
            </property>
            <layout class="QGridLayout" name="gridLayout_9">
             <item row="0" column="0">
-             <widget class="QListWidget" name="listWidget"/>
+             <widget class="QListWidget" name="FileList">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(90, 73, 95);
+color: rgb(255, 255, 255);</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -406,7 +411,7 @@ background-color: rgb(81, 34, 80);</string>
              <number>3</number>
             </property>
             <item row="0" column="1">
-             <widget class="QPushButton" name="NewFolder">
+             <widget class="QPushButton" name="NewWorkspace">
               <property name="maximumSize">
                <size>
                 <width>24</width>
