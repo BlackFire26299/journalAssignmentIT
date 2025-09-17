@@ -4,7 +4,7 @@ from PyQt6.QtCore import Qt, QDate
 from PyQt6 import uic
 from PyQt6.QtGui import QKeyEvent, QStandardItemModel, QStandardItem, QTextCharFormat, QColor
 import os
-
+import win32com.client
 import time
 import sys
 from math import pi, sqrt
