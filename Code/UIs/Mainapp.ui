@@ -644,6 +644,17 @@ color: rgb(255, 255, 255);</string>
                 <item row="0" column="0">
                  <layout class="QHBoxLayout" name="horizontalLayout_2">
                   <item>
+                   <widget class="QPushButton" name="SetDateButton">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(90, 73, 95);
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Set Date</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
                    <widget class="QPushButton" name="SaveButton1">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">

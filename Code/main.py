@@ -44,9 +44,9 @@ class MainWindow(QMainWindow):
         self.mainViewWidgets.setCurrentIndex(self.currentJournalPage)
         self.mdeditor.textChanged.connect(self.markdownUpdate)
         self.mdeditor.textChanged.connect(self.tempsave)
-
+        self.SetDateButton.clicked.connect(self.setDate)
         
-        self.date = self.calendar.selectedDate()
+        self.date: QDate = self.calendar.selectedDate()
         #to get date in tuple form is self.date.getDate() returns in (yyyy, mm, dd)
         self.show()
 
@@ -70,8 +70,15 @@ class MainWindow(QMainWindow):
         self.openFile = "Not Yet Saved"
         self.FileNameLabel.setText(self.openFile)
 
+    def setDate(self):
+        self.date: QDate = self.calendar.selectedDate()
+        (year,month,day) = self.date.getDate()
+        datestr = f"{day}, {month}, {year}"
+        os.setxattr(self.wsPath+"/"+self.openFile, "user.calendardate", datestr)
+        
 
     def Delete(self):
+            
             text, ok = QInputDialog.getText(self, "Input Dialog", "Do you want to delete "+"'"+self.openFile+"'"+"?(y/n)")
             if ok and text:
                 if text == "y":
