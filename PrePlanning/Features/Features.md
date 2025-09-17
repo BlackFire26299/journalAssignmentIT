@@ -3,7 +3,7 @@ Contents
 [Pre-Planning](PrePlanning/Pre-Planning)
 ## Main Features
 
-* [ ] Able to interact with the date (chose the date in the notes to create. And then place and order them on the calendar)
+* [ ] Able to interact with the date (chose the date in the notes to create. And then place and order them on the calendar) File calendar date will be stored in file attributes.
 * [x] Can allow free text inputs
 * [x] Enable saving and viewing of old entries
 * [x] Save entries and allow them to be accessed later
