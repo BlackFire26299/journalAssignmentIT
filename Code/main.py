@@ -4,7 +4,7 @@ from PyQt6.QtCore import Qt, QDate
 from PyQt6 import uic
 from PyQt6.QtGui import QKeyEvent, QStandardItemModel, QStandardItem, QTextCharFormat, QColor
 import os
-import win32com.client
+from datetime import datetime
 import time
 import sys
 from math import pi, sqrt
@@ -74,7 +74,8 @@ class MainWindow(QMainWindow):
         self.date: QDate = self.calendar.selectedDate()
         (year,month,day) = self.date.getDate()
         datestr = f"{day}, {month}, {year}"
-        os.setxattr(self.wsPath+"/"+self.openFile, "user.calendardate", datestr)
+        
+        
         
 
     def Delete(self):
