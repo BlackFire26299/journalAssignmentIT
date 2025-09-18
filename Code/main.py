@@ -54,9 +54,10 @@ class MainWindow(QMainWindow):
         self.mdeditor.setText("")
 
     def clickedFileItem(self, clickedItem):
-        self.openFile = clickedItem.text()+".md"
+        self.openFile = clickedItem.text()[:-10]+".md"
         self.mdeditor.setText(self.filecontents[self.openFile])
         self.FileNameLabel.setText(self.openFile)
+        
     
     def openWorkspace(self):
         directory_path = QFileDialog.getExistingDirectory(parent=self, caption="Select Directory", directory="")
@@ -73,7 +74,12 @@ class MainWindow(QMainWindow):
     def setDate(self):
         self.date: QDate = self.calendar.selectedDate()
         (year,month,day) = self.date.getDate()
-        datestr = f"{day}, {month}, {year}"
+        
+        attributedate = datetime(year, month, day, 12,0,0,0).timestamp()
+        
+        os.utime(self.wsPath+"/"+self.openFile, (attributedate,attributedate))
+
+        self.populateFileBrowser()
         
         
         
@@ -141,7 +147,7 @@ class MainWindow(QMainWindow):
         self.mainViewWidgets.setCurrentIndex(0)
 
 
-    def populateFileBrowser(self, path= "PrePlanning"):
+    def populateFileBrowser(self):
         self.FileList.clear()
         self.files = []
         filesAndFolders = os.listdir(self.wsPath)
@@ -151,7 +157,12 @@ class MainWindow(QMainWindow):
                 self.files.append(item)
         
         for file in self.files:
-            item = QListWidgetItem(file[:-3])
+
+            itemcreationtime = os.path.getctime(self.wsPath+"/"+ file)
+            itemcreationdate = datetime.fromtimestamp(itemcreationtime)
+
+
+            item = QListWidgetItem(file[:-3] + f" {itemcreationdate.day}-{itemcreationdate.month}-{itemcreationdate.year}")
             self.FileList.addItem(item)
             with open(self.wsPath+"/"+file, "r") as openFile:
                 self.filecontents[file] = openFile.read()
