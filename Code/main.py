@@ -7,6 +7,9 @@ import os
 from datetime import datetime
 import time
 import sys
+import win32file
+import win32api
+import pywintypes
 from math import pi, sqrt
 
 
@@ -54,7 +57,18 @@ class MainWindow(QMainWindow):
         self.mdeditor.setText("")
 
     def clickedFileItem(self, clickedItem):
-        self.openFile = clickedItem.text()[:-10]+".md"
+        filenamearr: list = clickedItem.text().split(" ")
+        hasSpaceAtEnd = False
+        if clickedItem.text()[-1] == " ":
+            hasSpaceAtEnd = True
+        filenamearr.pop(-1)
+        filenamestr = ""
+        for partOfName in filenamearr:
+            filenamestr += partOfName
+            filenamestr += " "
+        if not hasSpaceAtEnd: 
+            filenamestr = filenamestr[:-1]
+        self.openFile = filenamestr+".md"
         self.mdeditor.setText(self.filecontents[self.openFile])
         self.FileNameLabel.setText(self.openFile)
         
@@ -77,8 +91,10 @@ class MainWindow(QMainWindow):
         
         attributedate = datetime(year, month, day, 12,0,0,0).timestamp()
         
-        os.utime(self.wsPath+"/"+self.openFile, (attributedate,attributedate))
-
+        handle = win32file.CreateFile(self.wsPath+"/"+self.openFile, win32file.GENERIC_WRITE, 0, None, win32file.OPEN_EXISTING, 0, 0)
+        filetime_creation = pywintypes.Time(attributedate)
+        win32file.SetFileTime(handle, filetime_creation, None, None) 
+        win32file.CloseHandle(handle)
         self.populateFileBrowser()
         
         
