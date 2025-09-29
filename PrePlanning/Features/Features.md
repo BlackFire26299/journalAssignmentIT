@@ -11,7 +11,7 @@ Contents
 
 ## Extra Features I would like to include
 
- - [ ] A command line interface for easy git access
+ - [x] A command line interface
  - [x] chose to open any folder and automatically read any markdown files. 
  - [ ] settings page to specify different things
  - [x] Users can manually add new files that have been created in a different software (refresh the file browser)
