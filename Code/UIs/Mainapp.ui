@@ -55,7 +55,7 @@ background-color: rgb(129, 54, 128);</string>
           <number>10</number>
          </property>
          <item row="0" column="0">
-          <widget class="QFrame" name="Menu">
+          <widget class="QFrame" name="Settings">
            <property name="minimumSize">
             <size>
              <width>32</width>
@@ -80,117 +80,33 @@ background-color: rgb(81, 34, 80);</string>
            <property name="frameShadow">
             <enum>QFrame::Shadow::Raised</enum>
            </property>
-           <widget class="QWidget" name="verticalLayoutWidget">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>31</width>
-              <height>31</height>
-             </rect>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <property name="leftMargin">
+             <number>1</number>
             </property>
-            <layout class="QVBoxLayout" name="menubars">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="leftMargin">
-              <number>3</number>
-             </property>
-             <property name="topMargin">
-              <number>3</number>
-             </property>
-             <item>
-              <widget class="Line" name="line_3">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>3</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>26</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color: rgb(255, 231, 253);
-background-color: rgb(255, 231, 253);</string>
-               </property>
-               <property name="lineWidth">
-                <number>18</number>
-               </property>
-               <property name="midLineWidth">
-                <number>3</number>
-               </property>
-               <property name="orientation">
-                <enum>Qt::Orientation::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="Line" name="line">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>3</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>26</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color: rgb(255, 231, 253);
-background-color: rgb(255, 231, 253);</string>
-               </property>
-               <property name="lineWidth">
-                <number>18</number>
-               </property>
-               <property name="midLineWidth">
-                <number>3</number>
-               </property>
-               <property name="orientation">
-                <enum>Qt::Orientation::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="Line" name="line_2">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>3</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>26</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color: rgb(255, 231, 253);
-background-color: rgb(255, 231, 253);</string>
-               </property>
-               <property name="lineWidth">
-                <number>18</number>
-               </property>
-               <property name="midLineWidth">
-                <number>3</number>
-               </property>
-               <property name="orientation">
-                <enum>Qt::Orientation::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-            </layout>
-            <zorder>line_2</zorder>
-            <zorder>line_3</zorder>
-            <zorder>line</zorder>
-           </widget>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="Settingsbutton">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Settings menu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset theme="document-properties"/>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
          <item row="0" column="2">

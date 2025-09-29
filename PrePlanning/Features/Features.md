@@ -14,7 +14,7 @@ Contents
  - [ ] A command line interface for easy git access
  - [x] chose to open any folder and automatically read any markdown files. 
  - [ ] settings page to specify different things
- - [ ] Users can manually add new files that have been created in a different software (refresh the file browser)
+ - [x] Users can manually add new files that have been created in a different software (refresh the file browser)
  - [ ] highlight entries on the calendar
  - [x] Have the user be able to switch from markdown editing (markdown without the styling) to markdown viewing (markdown with the styling) with a hotkey
  - [x] Have there be a kind of workspace system where the user can separate their notes in different directories.
