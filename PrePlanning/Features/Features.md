@@ -18,6 +18,7 @@ Contents
  - [ ] highlight entries on the calendar
  - [x] Have the user be able to switch from markdown editing (markdown without the styling) to markdown viewing (markdown with the styling) with a hotkey
  - [x] Have there be a kind of workspace system where the user can separate their notes in different directories.
- - [ ] Themes
+
 ## Extra Features I would like to include if I have time
 - [ ] live markdown processing so that you wouldn't have to switch in-between viewing and editing
+- [ ] Themes
