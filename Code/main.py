@@ -11,7 +11,7 @@ import win32file
 import win32api
 import pywintypes
 from math import pi, sqrt
-
+import subprocess
 
 app = QApplication(sys.argv)
 
@@ -48,6 +48,7 @@ class MainWindow(QMainWindow):
         self.mdeditor.textChanged.connect(self.markdownUpdate)
         self.mdeditor.textChanged.connect(self.tempsave)
         self.SetDateButton.clicked.connect(self.setDate)
+        self.SendCommandButton.clicked.connect(self.SendCommand)
         
         self.date: QDate = self.calendar.selectedDate()
         #to get date in tuple form is self.date.getDate() returns in (yyyy, mm, dd)
@@ -55,6 +56,30 @@ class MainWindow(QMainWindow):
 
     def clearEdit(self):
         self.mdeditor.setText("")
+
+
+    def SendCommand(self):
+        command = self.CommandLineEdit.text()
+        try: 
+            result = subprocess.run(command, check=True, capture_output=True, text=True, shell=True)
+        except subprocess.CalledProcessError as e:
+            msg = QMessageBox(self)
+            msg.setWindowTitle("Error: Bad Command")
+            msg.setText(f"The command you entered was: '{self.CommandLineEdit.text()}', \n the error was {e.stderr}")
+            msg.setIcon(QMessageBox.Icon.Warning)
+            msg.setStandardButtons(QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
+            msg.setDefaultButton(QMessageBox.StandardButton.Ok)
+            msg.exec()
+            return
+        msg = QMessageBox(self)
+        msg.setWindowTitle("Successfully executed")
+        msg.setText(f"Output is {result.stdout}")
+        msg.setIcon(QMessageBox.Icon.Information)
+        msg.setStandardButtons(QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
+        msg.setDefaultButton(QMessageBox.StandardButton.Ok)
+        msg.exec()
+        self.CommandLineEdit.setText("")
+
 
     def clickedFileItem(self, clickedItem):
         filenamearr: list = clickedItem.text().split(" ")
@@ -98,8 +123,6 @@ class MainWindow(QMainWindow):
         self.populateFileBrowser()
         
         
-        
-
     def Delete(self):
             
             text, ok = QInputDialog.getText(self, "Input Dialog", "Do you want to delete "+"'"+self.openFile+"'"+"?(y/n)")
