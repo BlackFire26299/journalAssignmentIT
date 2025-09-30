@@ -262,41 +262,54 @@ class MainWindow(QMainWindow):
         #else set to the mdviewer page
         else: 
             self.mainViewWidgets.setCurrentIndex(1)
-
+    #Function to switch to journal pages from calendar
     def openJournalPage(self):
+        #set calendar open to false
         self.iscalendaropen = False
+        #open the journal edit view
         self.mainViewWidgets.setCurrentIndex(2)
         
-
+    #funtion to switch to calendar from jorunal pages
     def openCalendarPage(self):
+        #set calendar open to true
         self.iscalendaropen = True
+        #open the calendar page
         self.mainViewWidgets.setCurrentIndex(0)
 
-
+    #function to populate/refresh the file browser
     def populateFileBrowser(self):
+        #clear the file list widget and reset the files list
         self.FileList.clear()
         self.files = []
+        #get all files and folders in current dir
         filesAndFolders = os.listdir(self.wsPath)
         
+        #check if the item is a markdown file and if it is add it to the files list
         for item in filesAndFolders:
             if item[-3:] == ".md":
                 self.files.append(item)
         
+        #iterate through files
         for file in self.files:
-
+            #get the creation time of the file
             itemcreationtime = os.path.getctime(self.wsPath+"/"+ file)
             itemcreationdate = datetime.fromtimestamp(itemcreationtime)
 
-
+            #create a list item from the name of the file and the date it was created
             item = QListWidgetItem(file[:-3] + f" {itemcreationdate.day}-{itemcreationdate.month}-{itemcreationdate.year}")
+            #add the item to the listwidget
             self.FileList.addItem(item)
+            #read the contents of the file and add it to a file dictionary with its name as the key and its contents as the content.
             with open(self.wsPath+"/"+file, "r") as openFile:
                 self.filecontents[file] = openFile.read()
         
-
+    #update the markdown viewer to editor text
     def markdownUpdate(self):
+        #set the text of the mdview to that of the mdeditor but in a markdown interpreter
         self.mdView.setMarkdown(self.mdeditor.toPlainText())
 
+#instantiate the main window
 window = MainWindow("BergenTrücking")
 
+#run the app and exit when the X button is clicked
 sys.exit(app.exec())

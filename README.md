@@ -16,4 +16,3 @@ Refer to the [Pre-Planning](PrePlanning/Pre-Planning.md)
 Refer to the [Documentation](Documentation/Documentation.md)
 
 
-## Reflection
