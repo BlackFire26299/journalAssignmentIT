@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Documentation/Develpmentprocess/Development Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Development Process"
             }
           }
         ]
@@ -169,11 +169,13 @@
   },
   "active": "2aed47da7fe7b2da",
   "lastOpenFiles": [
-    "PrePlanning/Pre-Planning.md",
-    "PrePlanning/VisualDesign/VisualDesign.md",
-    "PrePlanning/VisualDesign/App background.png",
-    "PrePlanning/Ideas/Ideas and pseudocode.md",
     "PrePlanning/Features/Features.md",
+    "PrePlanning/Ideas/Ideas and pseudocode.md",
+    "PrePlanning/VisualDesign/App background.png",
+    "PrePlanning/VisualDesign/VisualDesign.md",
+    "art/icons/Calendar.png",
+    "PrePlanning/Pre-Planning.md",
+    "README.md",
     "Documentation/Develpmentprocess/Development Process.md",
     "Documentation/Documentation.md",
     "PrePlanning/Ideas",
@@ -194,12 +196,10 @@
     "Code/test.py",
     "4/09/2025.md",
     "TestWorkSpace/timeforIT.md",
-    "art/icons/Calendar.png",
     "PrePlanning/Visual Design/Visual Design.md",
     "PrePlanning/Visual Design/App background.png",
     "PrePlanning/Pre-Planning Contents.md",
     "Documentation/Documentation Contents.md",
-    "README.md",
     "TestWorkSpace/german.md",
     "TestWorkSpace/g.md",
     "TestWorkSpace/f.md",
