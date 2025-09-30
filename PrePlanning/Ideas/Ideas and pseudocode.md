@@ -7,8 +7,15 @@ Contents:
 - Have there be a kind of workspace system where the user can separate their notes in different directories. The app will then globally remember the workspaces the user can open.
 - save some of the settings globally
 - and save some locally in the created workspace directory. 
-- Users can specify how many directories down they want the app to search for markdown or txt files when opening a new folder
-- Users can specify if they want to search for markdown or text documents or both
-- Users can manually add new files that have been created in software
+- Users can manually add new files that have been created in software:
+```
+create button with refresh icon.
+link button to a class function.
+class function:
+search for all markdown files in the current directory and add them to a
+list. (this is done by checking if the last 3 characters of the file name 
+are ".md") Iterate through that list and add each of the file names to a list 
+view widget along with the set date of the entry.
+```
 - Have the user be able to switch from markdown editing (markdown without the styling) to markdown viewing (markdown with the styling) with a hotkey
-- 
+- use the creation date of a file to save the date of the entry

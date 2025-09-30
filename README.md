@@ -15,8 +15,5 @@ Refer to the [Pre-Planning](PrePlanning/Pre-Planning.md)
 
 Refer to the [Documentation](Documentation/Documentation.md)
 
-## Qbism
-
-Incase you wanted to read: [Qbism](Qbism/Qbism)
 
 ## Reflection

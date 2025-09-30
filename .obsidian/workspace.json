@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PrePlanning/Features/Features.md",
+                "file": "Documentation/Develpmentprocess/Development Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Features"
+              "title": "Development Process"
             }
           }
         ]
@@ -169,6 +169,13 @@
   },
   "active": "5cced3755df9d35c",
   "lastOpenFiles": [
+    "PrePlanning/Features/Features.md",
+    "PrePlanning/Ideas/Ideas and pseudocode.md",
+    "PrePlanning/Pre-Planning.md",
+    "README.md",
+    "TestWorkSpace/Today I did this.md",
+    "TestWorkSpace/c.md",
+    "TestWorkSpace/a.md",
     "Code/UIs/Settings.ui.knZqRt",
     "Code/UIs/Settings.ui",
     "Code/UIs/Mainapp.ui.MfsIwJ",
@@ -179,24 +186,16 @@
     "Code/UIs/Mainapp.ui.NVzoGe",
     "Code/UIs/Mainapp.ui.BTkSvj",
     "Code/UIs/Mainapp.ui.gmqJpb",
-    "Code/UIs/Mainapp.ui.xVXNNZ",
-    "TestWorkSpace/Today I did this.md",
     "TestWorkSpace/german.md",
     "TestWorkSpace/g.md",
     "TestWorkSpace/f.md",
     "TestWorkSpace/e.md",
     "TestWorkSpace/d.md",
-    "TestWorkSpace/c.md",
     "TestWorkSpace/b.md",
-    "TestWorkSpace/a.md",
     "Documentation/Develpmentprocess/Development Process.md",
     "Documentation/Documentation.md",
-    "PrePlanning/Pre-Planning.md",
-    "PrePlanning/Features/Features.md",
-    "PrePlanning/Ideas/Ideas.md",
     "PrePlanning/VisualDesign/VisualDesign.md",
     "Visual.md",
-    "README.md",
     "PrePlanning/VisualDesign/App background.png",
     "Qbism/Qbism.md",
     "Untitled.canvas",

@@ -15,6 +15,18 @@ import subprocess
 
 app = QApplication(sys.argv)
 
+class SettingsMenu(QMainWindow):
+    def __init__(self, name):
+        super().__init__()
+        string = "ha"
+        uic.loadUi("Code/UIs/Settings.ui", self)
+        if type(name) == type(string):
+            self.setWindowTitle(name)
+        self.show()
+    def close(self):
+        del(self)
+        return super().close()
+
 
 
 class MainWindow(QMainWindow):
@@ -49,7 +61,10 @@ class MainWindow(QMainWindow):
         self.mdeditor.textChanged.connect(self.tempsave)
         self.SetDateButton.clicked.connect(self.setDate)
         self.SendCommandButton.clicked.connect(self.SendCommand)
-        
+        self.Settingsbutton.clicked.connect(self.openSettings)
+
+
+
         self.date: QDate = self.calendar.selectedDate()
         #to get date in tuple form is self.date.getDate() returns in (yyyy, mm, dd)
         self.show()
@@ -97,7 +112,9 @@ class MainWindow(QMainWindow):
         self.mdeditor.setText(self.filecontents[self.openFile])
         self.FileNameLabel.setText(self.openFile)
         
-    
+    def openSettings(self):
+        self.settingsmenu = SettingsMenu("Menu")
+
     def openWorkspace(self):
         directory_path = QFileDialog.getExistingDirectory(parent=self, caption="Select Directory", directory="")
         if directory_path:
