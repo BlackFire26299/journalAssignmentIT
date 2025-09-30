@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>469</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(129, 54, 128);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="howtouse">
+      <property name="text">
+       <string>To open a New diary entry click on the new file icon in the bar above the File selector. 
+To open a workspace click on the open folder icon in the bar above the file selector. 
+To save a Diary entry click on either the Save button above the entry view or the save icon in the bar above the file selector. 
+To permenantly delete an entry click on the trashbin icon in the bar above the file selector. 
+To refresh the file selector, in the case that you have added a file outside of this software, click on the refresh button in the bar abovee the file selector. 
+To access the calendar click on the calendar icon in the side bar. 
+ Diary entries are stored in markdown files allowing for greater customisability of notes, to switch inbetween editing the entry and viewing the formatted markdown version press [esc].
+To switch back to the journal entry view from the calendar press the journal icon in the sidebar. 
+To change the date for an entry first switch to the calendar, click on the desired date for that entry, return to the journal view and press the Set Date button above the entry editing view. To use the command line enter a command in the line in the bar above the journal or calendar view and press the enter button next to it. A pop-up of the output will be shown.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

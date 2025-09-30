@@ -30,8 +30,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-background-color: rgb(129, 54, 128);</string>
+       <string notr="true">background-color: rgb(129, 54, 128);</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::Shape::StyledPanel</enum>
